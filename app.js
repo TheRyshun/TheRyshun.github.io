@@ -26,72 +26,72 @@ const gameState = {
     clothesGages: {
         haut: {
             H: [ // Gages pour les hommes retirant le haut d'une femme
-                "Retire son haut tout en l'embrassant doucement sur l'épaule.",
-                "Retire doucement son haut en glissant tes mains sur ses bras."
+                "Retire son haut tout en l'embrassant doucement sa poitrine",
+                "Retire son haut tout en l'embrassant doucement sa poitrine"
             ],
             F: [ // Gages pour les femmes retirant le haut d'un homme
-                "Retire son t-shirt en traçant doucement ses abdos avec ton doigt.",
-                "Retire son haut tout en soufflant doucement sur sa nuque."
+                "Retire son haut tout en l'embrassant doucement sur le cou",
+                "Retire son haut tout en l'embrassant doucement sur le cou"
             ]
         },
         bas: {
             H: [ // Gages pour les hommes retirant le bas d'une femme
-                "Retire son pantalon en embrassant ses genoux.",
-                "Retire lentement son bas tout en caressant sa hanche."
+                "Retire lentement son bas tout en caressant ses fesses",
+                "Retire lentement son bas tout en caressant ses fesses"
             ],
             F: [ // Gages pour les femmes retirant le bas d'un homme
-                "Baisse son pantalon tout en le regardant intensément dans les yeux.",
-                "Retire son bas en caressant doucement ses cuisses."
+                "Baisse son pantalon tout en le regardant intensément dans les yeux",
+                "Baisse son pantalon tout en le regardant intensément dans les yeux"
             ]
         },
         sousVetements: {
             H: [ // Gages pour les hommes retirant les sous-vêtements d'une femme
-                "Retire ses sous-vêtements en embrassant délicatement ses hanches.",
-                "Fais glisser ses sous-vêtements en caressant tendrement ses cuisses."
+                "Enlève ses sous-vêtements et tout en la stimulant avec tes doigts (clitoris)",
+                "Enlève ses sous-vêtements et tout en la stimulant avec ta bouche (clitoris)."
             ],
             F: [ // Gages pour les femmes retirant les sous-vêtements d'un homme
-                "Enlève ses sous-vêtements en l'embrassant tendrement.",
-                "Retire ses sous-vêtements en caressant doucement son corps."
+                "Enlève ses sous-vêtements en lui fessant des bissous et coup de langue sur son sexe.",
+                "Enlève ses sous-vêtements en lui fessant des bissous et coup de langue sur son sexe."
             ]
         }
     },
     defaultGages: {
         H: { // Gages pour les hommes vers les femmes
             1: [ // Niveau 1 : Sensuels et exploratoires
-                "Passe tes lèvres sur ses tétons, alternant baisers et légères morsures.",
-                "Murmure une phrase érotique dans son oreille tout en effleurant son corps avec tes mains."
+                "Passe tes lèvres sur ses tétons, alternant baisers et légères morsures",
+                "Passe tes lèvres sur ses tétons, alternant baisers et légères morsures"
             ],
             2: [ // Niveau 2 : Intimes et suggestifs
-                "Stimule son clitoris avec ta langue pendant 1 minute, en alternant les rythmes.",
-                "Pénètre-la doucement avec un doigt, tout en maintenant un contact visuel."
+                "Stimule son clitoris avec ta langue pendant 1 minute, en alternant les rythmes",
+                "Pénètre-la doucement avec un doigt, tout en maintenant un contact visuel"
             ],
             3: [ // Niveau 3 : Audacieux et sexuels
-                "Explore son corps avec ta langue, en incluant l'intérieur de ses cuisses, son ventre et son intimité.",
-                "Allonge-la sur le dos et simule un mouvement de pénétration sans la pénétrer encore."
+                "Fait la jouir du clitoris",
+                "Allonge-la sur le dos et fait un fist pendant 1 minute"
             ],
             4: [ // Niveau 4 : Hardcore et explicite
-                "Positionne-la dans une posture intime (par exemple, à genoux ou allongée) et pratique une fellation approfondie avec consentement.",
-                "Pratique une pénétration lente, en changeant de rythme pour la surprendre.",
-                "Essaye une position où elle est allongée sur le ventre pendant que tu la pénètres doucement."
+                "Positionne-la dans une posture intime (par exemple, à genoux ou allongée) et pratique une fellation approfondie",
+                "Pratique une pénétration lente, en changeant de rythme pour la surprendre",
+                "Simple juste une baise hard oupsy"
             ]
         },
         F: { // Gages pour les femmes vers les hommes
             1: [ // Niveau 1 : Sensuels et exploratoires
-                "Effleure son sexe avec ta langue à travers ses sous-vêtements.",
-                "Embrasse la ligne de son pubis jusqu'à l'intérieur de ses cuisses."
+                "Masturbe le pendant 1 minute (amuse toi commme tu veux avec lui).",
+                "Masturbe le pendant 1 minute (amuse toi commme tu veux avec lui)."
             ],
             2: [ // Niveau 2 : Intimes et suggestifs
-                "Utilise ta bouche pour stimuler la longueur de son pénis, en variant entre succion et caresses de langue.",
+                "Utilise ta bouche pour stimuler la longueur de son pénis, en variant bisous et gorge.",
                 "Joue avec ses testicules en les massant ou les embrassant délicatement."
             ],
             3: [ // Niveau 3 : Audacieux et sexuels
-                "Prends son sexe dans ta bouche en intégralité, en alternant avec des caresses manuelles.",
+                "Monte sur lui et simule un mouvement de chevauchement sensuel, avec ou sans contact direct.",
                 "Monte sur lui et simule un mouvement de chevauchement sensuel, avec ou sans contact direct."
             ],
             4: [ // Niveau 4 : Hardcore et explicite
                 "Monte sur lui en position cowgirl et contrôle les mouvements pendant 1 minute.",
-                "Fais une fellation tout en utilisant tes mains pour le stimuler.",
-                "Change de position après 30 secondes pour intensifier l'acte (par exemple, passe du missionnaire au doggy style)."
+                "Dit lui ce que tu veux faire et il le fait.",
+                "Tu dois le faire craquer mentalement par contre après il est libre ^^'."
             ]
         }
     }
