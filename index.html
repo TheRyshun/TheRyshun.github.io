@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luden - Jeu de Couple</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Page d'accueil -->
+        <div id="home" class="page active">
+            <h1>Luden - Gage</h1>
+            <button onclick="startGame()">Commencer une partie</button>
+        </div>
+
+        <!-- Création des profils -->
+        <div id="profile-creation" class="page">
+            <h2>Création des Profils</h2>
+            
+            <!-- Profil Joueur 1 -->
+            <div class="profile-form">
+                <h3>Joueur 1</h3>
+                <input type="text" id="player1-name" placeholder="Votre nom">
+                <select id="player1-gender">
+                    <option value="">Choisir le genre</option>
+                    <option value="H">Homme</option>
+                    <option value="F">Femme</option>
+                </select>
+                
+                <div class="clothes-selection">
+                    <h4>Vos vêtements</h4>
+                    <select id="player1-top">
+                        <option value="">Choisir un haut</option>
+                        <option value="tshirt">T-shirt</option>
+                        <option value="pull">Pull</option>
+                    </select>
+                    
+                    <select id="player1-bottom">
+                        <option value="">Choisir un bas</option>
+                        <option value="pantalon">Pantalon</option>
+                        <option value="short">Short</option>
+                        <option value="jupe">Jupe</option>
+                    </select>
+                    
+                    <select id="player1-underwear">
+                        <option value="">Choisir les sous-vêtements</option>
+                        <!-- Options ajoutées dynamiquement en JS -->
+                    </select>
+                </div>
+
+                <div class="custom-gages">
+                    <h4>Vos gages personnalisés (3 requis)</h4>
+                    <div id="player1-gages">
+                        <input type="text" class="gage-input" placeholder="Gage 1">
+                        <input type="text" class="gage-input" placeholder="Gage 2">
+                        <input type="text" class="gage-input" placeholder="Gage 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profil Joueur 2 -->
+            <div class="profile-form">
+                <h3>Joueur 2</h3>
+                <input type="text" id="player2-name" placeholder="Votre nom">
+                <select id="player2-gender">
+                    <option value="">Choisir le genre</option>
+                    <option value="H">Homme</option>
+                    <option value="F">Femme</option>
+                </select>
+                
+                <div class="clothes-selection">
+                    <h4>Vos vêtements</h4>
+                    <select id="player2-top">
+                        <option value="">Choisir un haut</option>
+                        <option value="tshirt">T-shirt</option>
+                        <option value="pull">Pull</option>
+                    </select>
+                    
+                    <select id="player2-bottom">
+                        <option value="">Choisir un bas</option>
+                        <option value="pantalon">Pantalon</option>
+                        <option value="short">Short</option>
+                        <option value="jupe">Jupe</option>
+                    </select>
+                    
+                    <select id="player2-underwear">
+                        <option value="">Choisir les sous-vêtements</option>
+                        <!-- Options ajoutées dynamiquement en JS -->
+                    </select>
+                </div>
+
+                <div class="custom-gages">
+                    <h4>Vos gages personnalisés (3 requis)</h4>
+                    <div id="player2-gages">
+                        <input type="text" class="gage-input" placeholder="Gage 1">
+                        <input type="text" class="gage-input" placeholder="Gage 2">
+                        <input type="text" class="gage-input" placeholder="Gage 3">
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="validateProfiles()">Commencer la partie</button>
+        </div>
+
+        <!-- Phase de jeu -->
+        <div id="game-phase" class="page">
+            <div class="game-header">
+                <div class="phase-indicator">Phase 1: Retrait des vêtements</div>
+        <!-- Supprimer ou commenter les scores -->
+        <!-- <div class="scores">
+            <span id="player1-score">0</span> - <span id="player2-score">0</span>
+        </div> -->
+            </div>
+
+            <div class="game-content">
+                <div id="turn-info">
+                    <h3 id="active-player"></h3>
+                    <p id="target-player"></p>
+                </div>
+
+                <div id="gage-display">
+                    <p id="current-gage"></p>
+                    <div id="target-clothes"></div>
+                </div>
+
+                <div class="rating-system" style="display: none;">
+                    <h4>Noter le gage</h4>
+                    <div class="stars">
+                        <span onclick="rateGage(1)">⭐</span>
+                        <span onclick="rateGage(2)">⭐</span>
+                        <span onclick="rateGage(3)">⭐</span>
+                        <span onclick="rateGage(4)">⭐</span>
+                        <span onclick="rateGage(5)">⭐</span>
+                    </div>
+                </div>
+
+                <button id="complete-gage-btn" onclick="completeGage()">Gage réalisé</button>
+                <!-- Bouton pour passer à la deuxième phase -->
+                <button id="next-phase-btn" style="display: none;" onclick="startCustomGagesPhase()">Passer à la Phase 2</button>
+            </div>
+        </div>
+
+        <!-- Fin de partie -->
+        <div id="game-end" class="page">
+            <h2>Partie terminée!</h2>
+            <div class="final-scores">
+                <h3>Scores finaux</h3>
+                <p><span id="player1-final-score"></span> - <span id="player2-final-score"></span></p>
+            </div>
+            <p id="end-message"></p>
+            <button onclick="startNewGame()">Nouvelle partie</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
